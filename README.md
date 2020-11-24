@@ -8,7 +8,7 @@
 + 将object类型节点设置成csv文件名
 + 利用reference方法遍历object对象将Variable类型节点保存到csv文件
 
-### 利用点晴数据api将文字转换为英文
+### 利用点晴数据api将文字转换为拼音
 + https://api.djapi.cn
 
 ### 当运行完成会有部分空文件利用os模块删除
