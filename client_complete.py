@@ -41,7 +41,7 @@ class OPCClient:
         # 记录错误信息， 遇到过一个structure数据类型python源码没有写到
         self.error_msg = {}
 
-    # 利用栈进行遍历（参考网友写法）
+    # 利用栈进行遍历
     def browser_child(self, root, max_d=-1, ignore=()):
         stack = [CurState(None, root, 0)]
         while len(stack):
