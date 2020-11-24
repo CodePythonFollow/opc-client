@@ -1,3 +1,7 @@
+# 由于部分节点browse是出现编译错误，没想到比较好的避开的方法，重写调用关系比较多所以修改了源码
++ decode("utf-8")
++ 改成了decode("utf-8", "replace")
+
 # opc-client
 + 遍历opc节点将有效数据保存成csv文件
 
