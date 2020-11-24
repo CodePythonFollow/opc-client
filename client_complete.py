@@ -166,4 +166,19 @@ if __name__ == "__main__":
 
 """
 1、源码修改 ua_binary  里面的decode加上无效字符处理
+
+class _String(object):
+
+    ...
+    
+    @staticmethod
+    def unpack(data):
+        b = _Bytes.unpack(data)
+        if sys.version_info.major < 3:
+            # return unicode(b)  #might be correct for python2 but would complicate tests for python3
+            return b
+        else:
+            if b is None:
+                return b
+            return b.decode("utf-8", "replace")   # 加上replace会替换无法解码的字符。
 """
